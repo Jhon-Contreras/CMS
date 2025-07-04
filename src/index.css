@@ -1,0 +1,15 @@
+.bg-container-fluid-custom {
+  background-color: #032830;
+}
+.bg-container-custom {
+  background-color: #053742;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 1px 1px 18px #00000047;
+}
+.borderRadiusTb {
+  border-radius: 5px;
+}
+.form-label {
+  color: white;
+}
