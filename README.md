@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # CMS
 
 # 📇 Contact Manager System
