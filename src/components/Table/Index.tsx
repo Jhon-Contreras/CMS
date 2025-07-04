@@ -7,43 +7,45 @@ type Props = {
 
 function Table({ contacts, onClick }: Props) {
   return (
-    <table className="table table-hover table-dark table-striped">
-      <thead>
-        <tr>
-          <th scope="col">Nombre</th>
-          <th scope="col">Apellido</th>
-          <th scope="col">Correo</th>
-          <th scope="col">Tipo</th>
-          <th scope="col">Acciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        {contacts.length === 0 ? (
+    <div className="table-responsive">
+      <table className="table table-hover table-dark table-striped">
+        <thead>
           <tr>
-            <td colSpan={5} style={{ textAlign: "center" }}>
-              No hay contactos añadidos
-            </td>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Acciones</th>
           </tr>
-        ) : (
-          contacts.map((c) => (
-            <tr key={c.id}>
-              <td>{c.name}</td>
-              <td>{c.lastname}</td>
-              <td>{c.email}</td>
-              <td>{c.type}</td>
-              <td>
-                <button
-                  className="btn btn-sm btn-danger"
-                  onClick={() => c.id && onClick(c.id)}
-                >
-                  Eliminar
-                </button>
+        </thead>
+        <tbody>
+          {contacts.length === 0 ? (
+            <tr>
+              <td colSpan={5} style={{ textAlign: "center" }}>
+                No hay contactos añadidos
               </td>
             </tr>
-          ))
-        )}
-      </tbody>
-    </table>
+          ) : (
+            contacts.map((c) => (
+              <tr key={c.id}>
+                <td>{c.name}</td>
+                <td>{c.lastname}</td>
+                <td>{c.email}</td>
+                <td>{c.type}</td>
+                <td>
+                  <button
+                    className="btn btn-sm btn-danger"
+                    onClick={() => c.id && onClick(c.id)}
+                  >
+                    Eliminar
+                  </button>
+                </td>
+              </tr>
+            ))
+          )}
+        </tbody>
+      </table>
+    </div>
   );
 }
 
