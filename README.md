@@ -35,8 +35,20 @@ Un sistema simple de gestión de contactos hecho con **React + TypeScript**. Per
 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/contact-manager.git
-cd contact-manager
+git clone https://github.com/Jhon-Contreras/CMS
 
+```
+
+2 Instala las dependencias:
+
+```bash
+npm install
+
+```
+
+3 Inicia el servidor de desarrollo:
+
+```bash
+npm run dev
 
 ```
