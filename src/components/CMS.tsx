@@ -3,8 +3,6 @@ import Form from "../components/Form/Index";
 import Table from "../components/Table/Index";
 import type { Contact } from "../schemas/Contact";
 
-type Props = {};
-
 const CMS = () => {
   const [contacts, setContacts] = useState<Contact[]>([]);
 
